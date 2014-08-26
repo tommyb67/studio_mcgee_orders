@@ -4,7 +4,7 @@ class CreateOrders < ActiveRecord::Migration
       t.string :company
       t.string :item
       t.string :quantity
-      t.integer :cost
+      t.money :price
       t.string :description
 
       t.timestamps
