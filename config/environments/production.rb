@@ -77,4 +77,7 @@ StudioMcgeeOrders::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Required for heroku
+  config.action_mailer.default_url_options = { host: 'http://studio-mcgee-order.herokuapp.com/' }
 end
