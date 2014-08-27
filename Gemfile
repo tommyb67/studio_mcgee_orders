@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
+gem 'bootstrap-form', '~> 3.0.0'
 gem 'devise', '~> 3.3.0'
 gem 'money-rails', '~> 0.12.0'
 
