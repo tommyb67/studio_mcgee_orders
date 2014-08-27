@@ -18,6 +18,12 @@
   <%= f.text_field :price_cents, prepend: "$", label: "Cost" %>
   <%= f.text_area :description %>
 
+  <%= f.form_group :carrier, label: { text: "Carrier" } do %>
+    <%= f.radio_button :carrier, 0, label: "UPS", inline: true %>
+    <%= f.radio_button :carrier, 1, label: "FedEx", inline: true %>
+    <%= f.radio_button :carrier, 2, label: "USPS", inline: true %>
+  <% end %>
+
     <%= f.form_group do %>
       <%= f.submit %>
     <% end %>
