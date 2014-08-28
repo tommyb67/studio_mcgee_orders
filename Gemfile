@@ -13,6 +13,7 @@ gem 'bootstrap_form', '~> 2.1.1'
 gem 'devise', '~> 3.3.0'
 gem 'money-rails', '~> 0.12.0'
 gem 'active_shipping', '~> 0.12.4'
+gem 'trackerific', '~> 0.7.5'
 
 group :development, :test do
      gem 'sqlite3'
