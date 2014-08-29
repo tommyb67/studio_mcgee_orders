@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+  <%= link_to 'New Order', new_order_path %>
+<% end %>
+
 <h1>Listing orders</h1>
 
 <table>
@@ -25,9 +29,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<% if user_signed_in? %>
-  <%= link_to 'New Order', new_order_path %>
-<% end %>
