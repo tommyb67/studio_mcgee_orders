@@ -2,9 +2,13 @@
   <%= link_to 'New Order', new_order_path %>
 <% end %>
 
-<h3>Orders</h3>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Orders</strong></div>
+  <div class="panel-body">
 
-<table>
+
+<table class="table">
   <thead>
     <tr>
       <th>Company</th>
@@ -32,4 +36,17 @@
       </tr>
     <% end %>
   </tbody>
+</div>
 </table>
+
+
+<FORMmethod="post" action = "http://wwwapps.ups.com/WebTracking/OnlineTool">
+<INPUT type = "text" size=35 name="InquiryNumber1"> <INPUT type="text" size=35
+name="InquiryNumber2"> <INPUT type="text" size=35 name="InquiryNumber3"> <INPUT
+type="text" size=35 name="InquiryNumber4"> <INPUT type="hidden"
+name="TypeOfInquiryNumber" value="T"> <INPUT type="hidden"
+name="UPS_HTML_License" value=#####'Access Key'#### <INPUT type="hidden"
+name="UPS_HTML_Version" value="3.0"> <INPUT type=”hidden” name=”IATA” value =
+”us”> <INPUT type = ” hidden” name=”Lang” value = ”eng”> <INPUT type = "submit"
+name = "submit" value ="Track package(s)"> <INPUT type="reset" value="Clear
+package(s)"> </FORM>
